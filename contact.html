@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Связаться с Daniel Valtern. Telegram и почта пока не опубликованы." />
+    <meta name="theme-color" content="#0c0b0a" />
+    <title>Контакт — VALTERN</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="./index.html">VALTERN</a>
+          <nav class="nav-desktop" aria-label="Разделы">
+            <a class="nav-link" href="./about.html">Обо мне</a>
+            <a class="nav-link" href="./work.html">Проекты</a>
+            <a class="nav-link" href="./notes.html">Мышление</a>
+            <a class="nav-link" href="./path.html">Путь</a>
+            <a class="nav-link" href="./craft.html">Ремесло</a>
+            <a class="nav-link active" href="./contact.html">Контакт</a>
+          </nav>
+          <div class="header-actions">
+            <button type="button" class="icon-btn" data-theme-toggle>Св</button>
+            <button type="button" class="icon-btn menu-btn" data-menu-toggle aria-expanded="false">Меню</button>
+          </div>
+        </div>
+      </header>
+      <div id="site-menu" class="menu">
+        <nav aria-label="Меню">
+          <a class="menu-link" href="./about.html"><span>Обо мне</span><span class="menu-index">01</span></a>
+          <a class="menu-link" href="./work.html"><span>Проекты</span><span class="menu-index">02</span></a>
+          <a class="menu-link" href="./notes.html"><span>Мышление</span><span class="menu-index">03</span></a>
+          <a class="menu-link" href="./path.html"><span>Путь</span><span class="menu-index">04</span></a>
+          <a class="menu-link" href="./craft.html"><span>Ремесло</span><span class="menu-index">05</span></a>
+          <a class="menu-link" href="./contact.html"><span>Контакт</span><span class="menu-index">06</span></a>
+        </nav>
+      </div>
+      <main class="main">
+        <header class="page-lead">
+          <div class="page">
+            <p class="kicker">07 — Контакт</p>
+            <h1>Канал ещё не открыт.</h1>
+            <p class="lede">Telegram, GitHub и телефон не публиковались. Форма проверяет сообщение и не делает вид, что письмо дошло.</p>
+          </div>
+        </header>
+        <div class="page content-block">
+          <div class="contact-grid">
+            <div>
+              <p class="kicker">Уфа</p>
+              <p style="font-family: var(--font-mark); font-size: 2rem; font-weight: 500; margin: 0.75rem 0 0">Daniel Valtern</p>
+              <ul style="list-style: none; margin: 1.75rem 0 0; padding: 0">
+                <li style="border-top: 1px solid var(--line); padding: 1rem 0">
+                  <a href="https://ideanest.ru" target="_blank" rel="noreferrer" style="font-size: 1.15rem; text-decoration: none">IdeaNest</a>
+                  <p class="muted" style="margin: 0.35rem 0 0; font-size: 0.9rem">Единственная публичная ссылка проекта.</p>
+                </li>
+              </ul>
+              <p class="muted" style="margin-top: 1.5rem; font-size: 0.9rem">Адрес дома, расписание и документы не запрашиваются и не хранятся.</p>
+            </div>
+            <form data-contact-form novalidate>
+              <label class="field-label">Имя<input class="field" name="name" autocomplete="name" required /></label>
+              <label class="field-label">Куда ответить<input class="field" name="reply" autocomplete="email" placeholder="Telegram или почта — по желанию" /></label>
+              <label class="field-label">Сообщение<textarea class="field" name="message" required></textarea></label>
+              <label class="sr-only" aria-hidden="true">Компания<input tabindex="-1" autocomplete="off" name="company" /></label>
+              <button class="btn" type="submit" style="margin-top: 1.5rem">Проверить сообщение</button>
+              <p class="form-note hidden" data-contact-error role="alert" style="color: var(--gold)"></p>
+              <div class="hidden" data-contact-result style="margin-top: 1.75rem; border-top: 1px solid var(--line); padding-top: 1.25rem" role="status">
+                <p style="font-family: var(--font-mark); font-size: 1.4rem; font-weight: 500; margin: 0">Сообщение проверено и никуда не отправлено.</p>
+                <p class="muted" style="margin-top: 0.75rem">Прямого канала нет. Скопируйте текст и сохраните его, пока не появятся Telegram или почта.</p>
+                <button type="button" class="btn btn-ghost" style="margin-top: 1rem" data-contact-copy>Скопировать текст</button>
+                <textarea class="field" readonly data-contact-composed aria-label="Текст сообщения" style="margin-top: 1rem"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div><p class="footer-mark">VALTERN</p></div>
+          <nav class="footer-nav">
+            <a href="./about.html">Обо мне</a><a href="./work.html">Проекты</a><a href="./notes.html">Мышление</a>
+            <a href="./path.html">Путь</a><a href="./craft.html">Ремесло</a><a href="./contact.html">Контакт</a>
+          </nav>
+          <div><p class="muted" style="margin: 0">Русская версия</p></div>
+        </div>
+      </footer>
+    </div>
+    <script src="./site.js"></script>
+  </body>
+</html>

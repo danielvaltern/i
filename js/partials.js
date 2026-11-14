@@ -1,1 +1,0 @@
-/* Shared markup helpers are inlined in each page for zero build step. */

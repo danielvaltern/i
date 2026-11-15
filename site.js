@@ -114,7 +114,7 @@
       btn.addEventListener("click", function () {
         var filter = btn.getAttribute("data-filter");
         buttons.forEach(function (b) {
-          b.classList.toggle("btn-ghost", b !== btn);
+          b.classList.toggle("btn-primary", b === btn);
           b.setAttribute("aria-pressed", b === btn ? "true" : "false");
         });
         var visible = 0;
@@ -157,7 +157,7 @@
       btn.addEventListener("click", function () {
         activeTag = btn.getAttribute("data-tag") || "все";
         tags.forEach(function (b) {
-          b.classList.toggle("btn-ghost", b !== btn);
+          b.classList.toggle("btn-primary", b === btn);
           b.setAttribute("aria-pressed", b === btn ? "true" : "false");
         });
         apply();

@@ -1,149 +1,139 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Daniel Valtern — строитель своих проектов в начале пути. Уфа. Принципы, интересы и горизонт." />
-    <meta name="theme-color" content="#0c0b0a" />
-    <title>Обо мне — VALTERN</title>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="shell">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daniel Valtern — строит свои проекты. Уфа." />
+  <meta name="theme-color" content="#0d1110" />
+  <title>Обо мне — VALTERN</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="./index.html"><span class="brand-dot" aria-hidden="true"></span><span>VALTERN <span class="brand-muted">/ site</span></span></a>
+      <div class="sidebar-label">Профиль</div>
+      <div class="sidebar-city">Уфа · начало пути</div>
+      <nav class="nav" aria-label="Разделы">
+          <a class="nav-item" href="./index.html">Главная</a>
+          <a class="nav-item active" href="./about.html">Обо мне</a>
+          <a class="nav-item" href="./work.html">Проекты</a>
+          <a class="nav-item" href="./notes.html">Мышление</a>
+          <a class="nav-item" href="./path.html">Путь</a>
+          <a class="nav-item" href="./craft.html">Ремесло</a>
+          <a class="nav-item" href="./contact.html">Контакт</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="profile-mini">
+          <span class="avatar-fallback">V</span>
+          <div><strong>Daniel Valtern</strong><span>Строит проекты</span></div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
       <header class="site-header">
         <div class="header-inner">
-          <a class="brand" href="./index.html">VALTERN</a>
-          <nav class="nav-desktop" aria-label="Разделы">
-            <a class="nav-link active" href="./about.html">Обо мне</a>
-            <a class="nav-link" href="./work.html">Проекты</a>
-            <a class="nav-link" href="./notes.html">Мышление</a>
-            <a class="nav-link" href="./path.html">Путь</a>
-            <a class="nav-link" href="./craft.html">Ремесло</a>
-            <a class="nav-link" href="./contact.html">Контакт</a>
-          </nav>
+          <a class="header-brand" href="./index.html">VALTERN</a>
           <div class="header-actions">
-            <button type="button" class="icon-btn theme-btn" data-theme-toggle aria-label="Светлая тема" title="Светлая тема">
-              <span class="theme-icon theme-icon-sun" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-              </span>
-              <span class="theme-icon theme-icon-moon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z"/></svg>
-              </span>
+            <button type="button" class="icon-btn theme-btn" data-theme-toggle aria-label="Светлая тема" title="Тема">
+              <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+              <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z"/></svg></span>
             </button>
-            <button type="button" class="icon-btn menu-btn burger" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Меню">
+            <button type="button" class="icon-btn burger menu-btn" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Меню">
               <span></span><span></span><span></span>
             </button>
           </div>
         </div>
       </header>
       <div id="site-menu" class="menu">
-        <p class="kicker" style="margin-bottom: 1rem">Навигация</p>
-        <nav aria-label="Меню">
-          <a class="menu-link" href="./about.html"><span>Обо мне</span><span class="menu-index">01</span></a>
-          <a class="menu-link" href="./work.html"><span>Проекты</span><span class="menu-index">02</span></a>
-          <a class="menu-link" href="./notes.html"><span>Мышление</span><span class="menu-index">03</span></a>
-          <a class="menu-link" href="./path.html"><span>Путь</span><span class="menu-index">04</span></a>
-          <a class="menu-link" href="./craft.html"><span>Ремесло</span><span class="menu-index">05</span></a>
-          <a class="menu-link" href="./contact.html"><span>Контакт</span><span class="menu-index">06</span></a>
-        </nav>
+        <a class="menu-link" href="./index.html">Главная</a>
+        <a class="menu-link" href="./about.html">Обо мне</a>
+        <a class="menu-link" href="./work.html">Проекты</a>
+        <a class="menu-link" href="./notes.html">Мышление</a>
+        <a class="menu-link" href="./path.html">Путь</a>
+        <a class="menu-link" href="./craft.html">Ремесло</a>
+        <a class="menu-link" href="./contact.html">Контакт</a>
       </div>
-      <main class="main">
-        <header class="page-lead">
-          <div class="page">
-            <p class="kicker">02 — Daniel Valtern</p>
-            <h1>Строит свои проекты. Ещё в начале — и нормально об этом пишет.</h1>
-            <p class="lede">Daniel Valtern собирает свои проекты. Первый уже в сети — IdeaNest.</p>
+
+      <header class="topbar">
+        <div class="breadcrumb">VALTERN / <strong>Обо мне</strong></div>
+        <div class="topbar-actions">
+          <div class="status"><i></i> online</div>
+          <button type="button" class="icon-btn theme-btn" data-theme-toggle aria-label="Светлая тема" title="Тема">
+              <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+              <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z"/></svg></span>
+            </button>
+        </div>
+      </header>
+
+      <div class="page">
+
+        <div class="heading">
+          <div>
+            <h1>Обо мне</h1>
+            <p>Строит свои проекты. Ещё в начале — и нормально об этом пишет.</p>
           </div>
-        </header>
-        <div class="page content-block">
-          <div class="stack">
-            <p>Daniel Valtern — имя. VALTERN — знак. Это не компания и не агентство, а человек, который собирает собственные проекты.</p>
+        </div>
+        <section class="panel reveal">
+          <div class="panel-body stack">
+            <p>Daniel Valtern — имя. VALTERN — знак. Это человек, который собирает собственные проекты.</p>
             <p>Живёт и работает в Уфе.</p>
             <p>Публичный проект один: IdeaNest — каталог бизнес-идей и статьи, подбор по бюджету и формату. Без обещаний «лёгких денег». Сайт уже можно открыть.</p>
-            <p>Интерес собран вокруг дела: предпринимательство, технологии, код, искусственный интеллект, финансы, дизайн, развитие. Ремесло на сегодня конкретное и без повышения градуса.</p>
+            <p>Интерес: предпринимательство, технологии, код, ИИ, финансы, дизайн, развитие.</p>
           </div>
+        </section>
+        <div class="grid-2">
+          <section class="panel reveal">
+            <div class="panel-header"><h2>Сильное</h2></div>
+            <div class="panel-body"><ul class="list-clean">
+              <li>Сам ставит задачу и доводит до результата</li>
+              <li>Думает продуктом, а не только поручением</li>
+              <li>Собирает форму: текст, вид, логика</li>
+            </ul></div>
+          </section>
+          <section class="panel reveal reveal-delay-1">
+            <div class="panel-header"><h2>В работе</h2></div>
+            <div class="panel-body"><ul class="list-clean">
+              <li class="muted">Дисциплина на длинной дистанции</li>
+              <li class="muted">Более глубокая техническая база</li>
+              <li class="muted">Короткий публичный голос</li>
+              <li class="muted">Деньги и бизнес-модели</li>
+            </ul></div>
+          </section>
         </div>
-        <section class="section">
-          <div class="section-inner split">
-            <div class="list-block">
-              <h2>Сильное</h2>
-              <ul>
-                <li>Сам ставит задачу и доводит её до результата.</li>
-                <li>Думает продуктом, а не только поручением.</li>
-                <li>Собирает форму: текст, вид, логика.</li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <h2>В работе</h2>
-              <ul>
-                <li class="soft">Дисциплина на длинной дистанции.</li>
-                <li class="soft">Более глубокая техническая база.</li>
-                <li class="soft">Короткий публичный голос.</li>
-                <li class="soft">Деньги и бизнес-модели.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="section">
-          <div class="section-inner">
-            <h2 style="font-family: var(--font-mark); font-size: 1.8rem; font-weight: 500; margin: 0">Принципы</h2>
-            <div class="principles" style="margin-top: 1.5rem">
-              <p class="principle-text"><span class="principle-num" style="margin-right: 0.6rem">01</span>Сначала сделанная работа, потом разговор о ней.</p>
-              <p class="principle-text"><span class="principle-num" style="margin-right: 0.6rem">02</span>Длинная дистанция важнее быстрого шума.</p>
-            </div>
-            <p class="muted" style="margin-top: 1.5rem">Пока этих двух достаточно.</p>
-          </div>
-        </section>
-        <section class="section" style="border-bottom: 0">
-          <div class="section-inner skill-grid">
-            <div class="list-block">
-              <h2>Интересы</h2>
-              <ul>
-                <li class="soft">Предпринимательство</li>
-                <li class="soft">Технологии</li>
-                <li class="soft">Программирование</li>
-                <li class="soft">Искусственный интеллект</li>
-                <li class="soft">Финансы</li>
-                <li class="soft">Дизайн</li>
-                <li class="soft">Саморазвитие</li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <h2>Горизонт</h2>
-              <p class="kicker" style="margin-top: 0.5rem">Намерение, не факт</p>
-              <ul>
-                <li>IdeaNest как продукт, которым пользуются люди.</li>
-                <li>Несколько своих проектов, не один.</li>
-                <li>Ясный личный голос.</li>
-                <li>Более высокий уровень в коде и дизайне.</li>
-              </ul>
-            </div>
-            <div class="list-block">
-              <h2>Ориентиры</h2>
-              <ul>
-                <li><strong>Оскар Хартманн</strong><br /><span class="muted" style="font-size: 0.9rem">Ориентир. Не наставник и не личное знакомство.</span></li>
-                <li><strong>Маргулан Сейсембай</strong><br /><span class="muted" style="font-size: 0.9rem">Ориентир. Не наставник и не личное знакомство.</span></li>
-                <li><strong>Книги о бизнесе</strong><br /><span class="muted" style="font-size: 0.9rem">Читает. Конкретные названия пока не выносил в список.</span></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="site-footer">
-        <div class="footer-inner">
-          <div>
-            <p class="footer-mark">VALTERN</p>
-            <p class="muted" style="margin-top: 0.75rem; max-width: 18rem">Daniel Valtern. Уфа. Начало пути — без выдуманного масштаба.</p>
-          </div>
-          <nav class="footer-nav">
-            <a href="./about.html">Обо мне</a><a href="./work.html">Проекты</a><a href="./notes.html">Мышление</a>
-            <a href="./path.html">Путь</a><a href="./craft.html">Ремесло</a><a href="./contact.html">Контакт</a>
-          </nav>
-          <div><p class="muted" style="margin: 0">Русская версия</p></div>
+        <div class="grid-3">
+          <section class="panel reveal">
+            <div class="panel-header"><h2>Интересы</h2></div>
+            <div class="panel-body"><ul class="list-clean">
+              <li>Предпринимательство</li><li>Технологии</li><li>Программирование</li>
+              <li>ИИ</li><li>Финансы</li><li>Дизайн</li><li>Саморазвитие</li>
+            </ul></div>
+          </section>
+          <section class="panel reveal reveal-delay-1">
+            <div class="panel-header"><h2>Горизонт</h2><span>намерение</span></div>
+            <div class="panel-body"><ul class="list-clean">
+              <li>IdeaNest с пользователями</li>
+              <li>Несколько своих проектов</li>
+              <li>Ясный личный голос</li>
+              <li>Выше уровень в коде и дизайне</li>
+            </ul></div>
+          </section>
+          <section class="panel reveal reveal-delay-2">
+            <div class="panel-header"><h2>Ориентиры</h2></div>
+            <div class="panel-body"><ul class="list-clean">
+              <li>Оскар Хартманн</li>
+              <li>Маргулан Сейсембай</li>
+              <li>Книги о бизнесе</li>
+            </ul></div>
+          </section>
         </div>
-      </footer>
+
+        <p class="footer-note">VALTERN · Daniel Valtern · Уфа</p>
+      </div>
     </div>
-    <script src="./site.js"></script>
-  </body>
+  </div>
+  <script src="./site.js"></script>
+</body>
 </html>

@@ -1,89 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Проекты Daniel Valtern. Сейчас публично открыт только IdeaNest — без аудитории." />
-    <meta name="theme-color" content="#0c0b0a" />
-    <title>Проекты — VALTERN</title>
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="shell">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Проекты Daniel Valtern. Сейчас открыт IdeaNest." />
+  <meta name="theme-color" content="#0d1110" />
+  <title>Проекты — VALTERN</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="./index.html"><span class="brand-dot" aria-hidden="true"></span><span>VALTERN <span class="brand-muted">/ site</span></span></a>
+      <div class="sidebar-label">Профиль</div>
+      <div class="sidebar-city">Уфа · начало пути</div>
+      <nav class="nav" aria-label="Разделы">
+          <a class="nav-item" href="./index.html">Главная</a>
+          <a class="nav-item" href="./about.html">Обо мне</a>
+          <a class="nav-item active" href="./work.html">Проекты</a>
+          <a class="nav-item" href="./notes.html">Мышление</a>
+          <a class="nav-item" href="./path.html">Путь</a>
+          <a class="nav-item" href="./craft.html">Ремесло</a>
+          <a class="nav-item" href="./contact.html">Контакт</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="profile-mini">
+          <span class="avatar-fallback">V</span>
+          <div><strong>Daniel Valtern</strong><span>Строит проекты</span></div>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
       <header class="site-header">
         <div class="header-inner">
-          <a class="brand" href="./index.html">VALTERN</a>
-          <nav class="nav-desktop" aria-label="Разделы">
-            <a class="nav-link" href="./about.html">Обо мне</a>
-            <a class="nav-link active" href="./work.html">Проекты</a>
-            <a class="nav-link" href="./notes.html">Мышление</a>
-            <a class="nav-link" href="./path.html">Путь</a>
-            <a class="nav-link" href="./craft.html">Ремесло</a>
-            <a class="nav-link" href="./contact.html">Контакт</a>
-          </nav>
+          <a class="header-brand" href="./index.html">VALTERN</a>
           <div class="header-actions">
-            <button type="button" class="icon-btn theme-btn" data-theme-toggle aria-label="Светлая тема" title="Светлая тема">
-              <span class="theme-icon theme-icon-sun" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-              </span>
-              <span class="theme-icon theme-icon-moon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z"/></svg>
-              </span>
+            <button type="button" class="icon-btn theme-btn" data-theme-toggle aria-label="Светлая тема" title="Тема">
+              <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+              <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z"/></svg></span>
             </button>
-            <button type="button" class="icon-btn menu-btn burger" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Меню">
+            <button type="button" class="icon-btn burger menu-btn" data-menu-toggle aria-expanded="false" aria-controls="site-menu" aria-label="Меню">
               <span></span><span></span><span></span>
             </button>
           </div>
         </div>
       </header>
       <div id="site-menu" class="menu">
-        <nav aria-label="Меню">
-          <a class="menu-link" href="./about.html"><span>Обо мне</span><span class="menu-index">01</span></a>
-          <a class="menu-link" href="./work.html"><span>Проекты</span><span class="menu-index">02</span></a>
-          <a class="menu-link" href="./notes.html"><span>Мышление</span><span class="menu-index">03</span></a>
-          <a class="menu-link" href="./path.html"><span>Путь</span><span class="menu-index">04</span></a>
-          <a class="menu-link" href="./craft.html"><span>Ремесло</span><span class="menu-index">05</span></a>
-          <a class="menu-link" href="./contact.html"><span>Контакт</span><span class="menu-index">06</span></a>
-        </nav>
+        <a class="menu-link" href="./index.html">Главная</a>
+        <a class="menu-link" href="./about.html">Обо мне</a>
+        <a class="menu-link" href="./work.html">Проекты</a>
+        <a class="menu-link" href="./notes.html">Мышление</a>
+        <a class="menu-link" href="./path.html">Путь</a>
+        <a class="menu-link" href="./craft.html">Ремесло</a>
+        <a class="menu-link" href="./contact.html">Контакт</a>
       </div>
-      <main class="main">
-        <header class="page-lead">
-          <div class="page">
-            <p class="kicker">03 — Проекты</p>
-            <h1>Один открытый. Остальное не называется.</h1>
-            <p class="lede">Пока один открытый проект. Когда появятся следующие — они будут здесь.</p>
+
+      <header class="topbar">
+        <div class="breadcrumb">VALTERN / <strong>Проекты</strong></div>
+        <div class="topbar-actions">
+          <div class="status"><i></i> online</div>
+          <button type="button" class="icon-btn theme-btn" data-theme-toggle aria-label="Светлая тема" title="Тема">
+              <span class="theme-icon theme-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+              <span class="theme-icon theme-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 14.5A8.5 8.5 0 0 1 9.5 3 7 7 0 1 0 21 14.5z"/></svg></span>
+            </button>
+        </div>
+      </header>
+
+      <div class="page">
+
+        <div class="heading">
+          <div>
+            <h1>Проекты</h1>
+            <p>Пока один открытый. Когда появятся следующие — они будут здесь.</p>
           </div>
-        </header>
-        <div class="page content-block">
-          <div class="work-filters" role="group" aria-label="Фильтр проектов">
-            <button type="button" class="btn" data-filter="all" aria-pressed="true">Все</button>
-            <button type="button" class="btn btn-ghost" data-filter="open" aria-pressed="false">Открыт</button>
-            <button type="button" class="btn btn-ghost" data-filter="ahead" aria-pressed="false">Впереди</button>
-          </div>
-          <a class="work-item" href="./ideanest.html" data-status="open">
+        </div>
+        <div class="filters">
+          <button type="button" class="btn btn-primary" data-filter="all" aria-pressed="true">Все</button>
+          <button type="button" class="btn" data-filter="open" aria-pressed="false">Открыт</button>
+          <button type="button" class="btn" data-filter="ahead" aria-pressed="false">Впереди</button>
+        </div>
+        <section class="panel reveal">
+          <a class="row-link" href="./ideanest.html" data-status="open">
             <div>
-              <p class="kicker">Открыт</p>
-              <h2>IdeaNest</h2>
-              <p class="muted" style="margin-top: 0.75rem; max-width: 36rem">
-                Каталог бизнес-идей и статьи. Подбор по бюджету и формату. Без обещаний лёгкого заработка.
-              </p>
+              <strong>IdeaNest</strong>
+              <span>Каталог бизнес-идей и статьи · без обещаний «лёгких денег»</span>
             </div>
+            <span class="tag">открыт</span>
           </a>
-          <p class="empty hidden" data-filter-empty>Пока пусто — и это нормально.</p>
-        </div>
-      </main>
-      <footer class="site-footer">
-        <div class="footer-inner">
-          <div><p class="footer-mark">VALTERN</p></div>
-          <nav class="footer-nav">
-            <a href="./about.html">Обо мне</a><a href="./work.html">Проекты</a><a href="./notes.html">Мышление</a>
-            <a href="./path.html">Путь</a><a href="./craft.html">Ремесло</a><a href="./contact.html">Контакт</a>
-          </nav>
-          <div><p class="muted" style="margin: 0">Русская версия</p></div>
-        </div>
-      </footer>
+        </section>
+        <p class="muted hidden" data-filter-empty>Пока пусто — и это нормально.</p>
+
+        <p class="footer-note">VALTERN · Daniel Valtern · Уфа</p>
+      </div>
     </div>
-    <script src="./site.js"></script>
-  </body>
+  </div>
+  <script src="./site.js"></script>
+</body>
 </html>

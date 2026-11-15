@@ -14,19 +14,19 @@
   function initTheme() {
     var btn = qs("[data-theme-toggle]");
     if (!btn) return;
-    function label() {
-      btn.textContent = document.documentElement.dataset.theme === "light" ? "Тём" : "Св";
-      btn.setAttribute(
-        "aria-label",
-        document.documentElement.dataset.theme === "light" ? "Тёмная тема" : "Светлая тема"
-      );
+
+    function sync() {
+      var light = document.documentElement.dataset.theme === "light";
+      btn.setAttribute("aria-label", light ? "Тёмная тема" : "Светлая тема");
+      btn.setAttribute("title", light ? "Тёмная тема" : "Светлая тема");
     }
-    label();
+
+    sync();
     btn.addEventListener("click", function () {
       var next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
       document.documentElement.dataset.theme = next;
       localStorage.setItem(themeKey, next);
-      label();
+      sync();
     });
   }
 
@@ -34,22 +34,53 @@
     var menu = qs("#site-menu");
     var btn = qs("[data-menu-toggle]");
     if (!menu || !btn) return;
+
     function setOpen(open) {
       menu.classList.toggle("open", open);
       btn.setAttribute("aria-expanded", open ? "true" : "false");
-      btn.textContent = open ? "—" : "Меню";
       document.body.style.overflow = open ? "hidden" : "";
     }
+
     btn.addEventListener("click", function () {
       setOpen(!menu.classList.contains("open"));
     });
+
     qsa("a", menu).forEach(function (link) {
       link.addEventListener("click", function () {
         setOpen(false);
       });
     });
+
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape") setOpen(false);
+    });
+  }
+
+  function initReveal() {
+    var nodes = qsa(".reveal");
+    if (!nodes.length) return;
+
+    if (!("IntersectionObserver" in window)) {
+      nodes.forEach(function (n) {
+        n.classList.add("in");
+      });
+      return;
+    }
+
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.14, rootMargin: "0px 0px -8% 0px" }
+    );
+
+    nodes.forEach(function (n) {
+      io.observe(n);
     });
   }
 
@@ -198,6 +229,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     initTheme();
     initMenu();
+    initReveal();
     initPath();
     initWorkFilter();
     initNotes();

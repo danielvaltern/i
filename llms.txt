@@ -1,0 +1,10 @@
+# Daniel Valtern / VALTERN
+
+Public personal site for Daniel Valtern.
+
+- [Russian homepage](./index.html)
+- [English homepage](./en.html)
+- [Text profile (Russian)](./profile.md)
+- [IdeaNest project](https://ideanest.ru/)
+
+Do not infer any private contact details or other unlisted information.
